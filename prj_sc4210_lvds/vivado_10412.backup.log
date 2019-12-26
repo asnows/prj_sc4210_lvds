@@ -1,0 +1,827 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec 20 10:05:46 2019
+# Process ID: 10412
+# Current directory: E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10308 E:\WorkSpace\project\FPGA\prj_sc4210_lvds\prj_sc4210_lvds\prj_sc4210_lvds.xpr
+# Log file: E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/vivado.log
+# Journal file: E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-748] XILINX_TCLAPP_REPO is set to 'D:/Xilinx/Vivado/2018.1/data/XilinxTclStore'. Refresh XilinxTclStore catalog is disabled when XILINX_TCLAPP_REPO is set.
+start_gui
+open_project E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/project/FPGA/prj_sc4210/prj_sc4210/ip_repo/ip_lvds'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 979.676 ; gain = 231.926
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Dec 20 10:52:49 2019] Launched synth_1...
+Run output will be captured here: E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/synth_1/runme.log
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP E:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/bit_alignment.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/lvds.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/lvds_bitslip.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/lvds_gen_rxclk.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/lvds_iserdese.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/lvds_oserdes.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/lvds_rx.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/lvds_tx.v:]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rx_data_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'tx_clk_n' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'tx_clk_p' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'rx_data_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-4751] Bus Interface 'rx_data_clk': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-3153] Bus Interface 'tx_clk_n': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-4751] Bus Interface 'tx_clk_n': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-3153] Bus Interface 'tx_clk_p': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-4751] Bus Interface 'tx_clk_p': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'rx_data_clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-4751] Bus Interface 'rx_data_clk': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-3153] Bus Interface 'tx_clk_n': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-4751] Bus Interface 'tx_clk_n': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-3153] Bus Interface 'tx_clk_p': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-4751] Bus Interface 'tx_clk_p': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::edit_ip_in_project -upgrade true -name edit_ip_project -directory E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.tmp e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/project/FPGA/prj_sc4210/prj_sc4210/ip_repo/ip_lvds'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1068.477 ; gain = 28.223
+ipx::current_core e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS e:/WorkSpace/ip e:/WorkSpace/project/FPGA/prj_sc4210/prj_sc4210/ip_repo/ip_lvds} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/project/FPGA/prj_sc4210/prj_sc4210/ip_repo/ip_lvds'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:lvds:1.0'. The one found in IP location 'e:/WorkSpace/project/FPGA/prj_modelsim/src/LVDS' will take precedence over the same IP in location e:/WorkSpace/project/FPGA/prj_sc4210/prj_sc4210/ip_repo/ip_lvds
+add_files -norecurse E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf
+add_files -norecurse E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/bit_alignment.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_bitslip.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_gen_rxclk.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_iserdese.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_oserdes.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_rx.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_tx.v] -no_script -reset -force -quiet
+remove_files  {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/bit_alignment.v E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds.v E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_bitslip.v E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_gen_rxclk.v E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_iserdese.v E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_oserdes.v E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_rx.v E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/new/ip_lvds/lvds_tx.v}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Dec 20 14:56:13 2019] Launched synth_1...
+Run output will be captured here: E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Dec 20 15:15:37 2019] Launched synth_1...
+Run output will be captured here: E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'data_conv_model_i/fifo_0_i'
+INFO: [Project 1-454] Reading design checkpoint 'e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.dcp' for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_1'
+INFO: [Netlist 29-17] Analyzing 1629 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'lvds_I/clrl_refclk' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:1683]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'lvds_I/dataout_p[0]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:1728]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'lvds_I/reset' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:1996]
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2209.402 ; gain = 600.211
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_gpio_0/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_gpio_0/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/design_1_axi_vdma_imgCapture1_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/design_1_axi_vdma_imgCapture1_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'data_conv_model_i/fifo_0_i/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'data_conv_model_i/fifo_0_i/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_dpc_i/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_dpc_i/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_dpc_i/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_dpc_i/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_gaus_i/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_gaus_i/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_gaus_i/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_gaus_i/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_3/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_3/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_4/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_4/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_5/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_5/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_6/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_6/U0'
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/design_1_axi_vdma_imgCapture1_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/design_1_axi_vdma_imgCapture1_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'data_conv_model_i/fifo_0_i/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'data_conv_model_i/fifo_0_i/U0'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.af_rd_stg_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.af_rd_stg_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 115 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 110 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:44 ; elapsed = 00:00:38 . Memory (MB): peak = 2210.492 ; gain = 1109.609
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Dec 20 15:56:03 2019] Launched synth_1...
+Run output will be captured here: E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'data_conv_model_i/fifo_0_i'
+INFO: [Project 1-454] Reading design checkpoint 'e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.dcp' for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_1'
+INFO: [Netlist 29-17] Analyzing 1629 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/bit_align_en' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2622]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/bitslip_en' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2629]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'lvds_I/clrl_refclk' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2636]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'lvds_I/dataout_p[0]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2667]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[0]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2714]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[1]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2721]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[2]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2728]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[3]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2735]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[4]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2742]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[5]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2749]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[6]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2756]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[7]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2763]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/reset' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2773]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'lvds_I/reset' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2774]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[0]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2803]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[1]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2810]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[2]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2817]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[3]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2824]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[4]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2831]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[5]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2838]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[6]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2845]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[7]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2852]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data_clk' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2862]
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/processing_system7_0/inst'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_wrapper_i/design_1_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_gpio_0/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_gpio_0/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/design_1_axi_vdma_imgCapture1_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/design_1_axi_vdma_imgCapture1_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0_board.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'data_conv_model_i/fifo_0_i/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'data_conv_model_i/fifo_0_i/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_bayer2rgb/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_dpc_i/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_dpc_i/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_dpc_i/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_dpc_i/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_gaus_i/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_gaus_i/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_gaus_i/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'isp_model_axis_i/maxtri3x3_gaus_i/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_3/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_3/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_4/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_4/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_5/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_5/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_6/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_maxtrix/fifo_maxtrix.xdc] for cell 'opencv_model_i/sobel_axis_i/maxtri7x7_shift_i/line_buff_6/U0'
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/design_1_axi_vdma_0_1_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/design_1_axi_vdma_imgCapture1_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/design_1_axi_vdma_imgCapture1_0_clocks.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'data_conv_model_i/fifo_0_i/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'data_conv_model_i/fifo_0_i/U0'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/reset_gen_ic.rstblk_ic/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.af_rd_stg_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.af_rd_stg_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_vdma_memCopy/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 115 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 110 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 2388.805 ; gain = 178.313
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+create_debug_core u_ila_2 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_2]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_2]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_2]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_2]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_2]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_2]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_2]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_2]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list lvds_I/rx_data_clk ]]
+set_property port_width 1 [get_debug_ports u_ila_1/clk]
+connect_debug_port u_ila_1/clk [get_nets [list lvds_I/rx_clk ]]
+set_property port_width 1 [get_debug_ports u_ila_2/clk]
+connect_debug_port u_ila_2/clk [get_nets [list design_1_wrapper_i/design_1_i/processing_system7_0/inst/FCLK_CLK0 ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {cmos_sampling_i/data_in[0]} {cmos_sampling_i/data_in[1]} {cmos_sampling_i/data_in[2]} {cmos_sampling_i/data_in[3]} {cmos_sampling_i/data_in[4]} {cmos_sampling_i/data_in[5]} {cmos_sampling_i/data_in[6]} {cmos_sampling_i/data_in[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {cmos_sampling_i/data_out[0]} {cmos_sampling_i/data_out[1]} {cmos_sampling_i/data_out[2]} {cmos_sampling_i/data_out[3]} {cmos_sampling_i/data_out[4]} {cmos_sampling_i/data_out[5]} {cmos_sampling_i/data_out[6]} {cmos_sampling_i/data_out[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {vcap_i/m_axis_tdata[0]} {vcap_i/m_axis_tdata[1]} {vcap_i/m_axis_tdata[2]} {vcap_i/m_axis_tdata[3]} {vcap_i/m_axis_tdata[4]} {vcap_i/m_axis_tdata[5]} {vcap_i/m_axis_tdata[6]} {vcap_i/m_axis_tdata[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list cmos_sampling_i/href ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list cmos_sampling_i/href_out ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list isp_model_axis_i/m_axis_tlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list vcap_i/m_axis_tlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list opencv_model_i/m_axis_tlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list vcap_i/m_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list isp_model_axis_i/m_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list opencv_model_i/m_axis_tready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list vcap_i/m_axis_tuser ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list opencv_model_i/m_axis_tuser ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list isp_model_axis_i/m_axis_tuser ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list opencv_model_i/m_axis_tvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list isp_model_axis_i/m_axis_tvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list vcap_i/m_axis_tvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list cmos_sampling_i/vsync ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list cmos_sampling_i/vsync_out ]]
+set_property port_width 8 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_tdata[0]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_tdata[1]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_tdata[2]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_tdata[3]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_tdata[4]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_tdata[5]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_tdata[6]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_tdata[7]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 5 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/master_tapValue[0]} {lvds_I/LVDS_RX[0].lvds_rx_i/master_tapValue[1]} {lvds_I/LVDS_RX[0].lvds_rx_i/master_tapValue[2]} {lvds_I/LVDS_RX[0].lvds_rx_i/master_tapValue[3]} {lvds_I/LVDS_RX[0].lvds_rx_i/master_tapValue[4]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 8 [get_debug_ports u_ila_1/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_tdata[0]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_tdata[1]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_tdata[2]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_tdata[3]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_tdata[4]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_tdata[5]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_tdata[6]} {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_tdata[7]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 8 [get_debug_ports u_ila_1/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe3]
+connect_debug_port u_ila_1/probe3 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/pattern[0]} {lvds_I/LVDS_RX[0].lvds_rx_i/pattern[1]} {lvds_I/LVDS_RX[0].lvds_rx_i/pattern[2]} {lvds_I/LVDS_RX[0].lvds_rx_i/pattern[3]} {lvds_I/LVDS_RX[0].lvds_rx_i/pattern[4]} {lvds_I/LVDS_RX[0].lvds_rx_i/pattern[5]} {lvds_I/LVDS_RX[0].lvds_rx_i/pattern[6]} {lvds_I/LVDS_RX[0].lvds_rx_i/pattern[7]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 5 [get_debug_ports u_ila_1/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe4]
+connect_debug_port u_ila_1/probe4 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/slave_tapValue[0]} {lvds_I/LVDS_RX[0].lvds_rx_i/slave_tapValue[1]} {lvds_I/LVDS_RX[0].lvds_rx_i/slave_tapValue[2]} {lvds_I/LVDS_RX[0].lvds_rx_i/slave_tapValue[3]} {lvds_I/LVDS_RX[0].lvds_rx_i/slave_tapValue[4]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 5 [get_debug_ports u_ila_1/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe5]
+connect_debug_port u_ila_1/probe5 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/tap_value[0]} {lvds_I/LVDS_RX[0].lvds_rx_i/tap_value[1]} {lvds_I/LVDS_RX[0].lvds_rx_i/tap_value[2]} {lvds_I/LVDS_RX[0].lvds_rx_i/tap_value[3]} {lvds_I/LVDS_RX[0].lvds_rx_i/tap_value[4]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe6]
+connect_debug_port u_ila_1/probe6 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/align_done} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe7]
+connect_debug_port u_ila_1/probe7 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/bit_align_en} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe8]
+connect_debug_port u_ila_1/probe8 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/bitslip} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe9]
+connect_debug_port u_ila_1/probe9 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/bitslip_en} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe10]
+connect_debug_port u_ila_1/probe10 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/idelayCtrl_rdy} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe11]
+connect_debug_port u_ila_1/probe11 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/iser_m_Comb} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe12]
+connect_debug_port u_ila_1/probe12 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/iser_s_Comb} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe13]
+connect_debug_port u_ila_1/probe13 [get_nets [list {lvds_I/LVDS_RX[0].lvds_rx_i/reset} ]]
+set_property port_width 32 [get_debug_ports u_ila_2/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe0]
+connect_debug_port u_ila_2/probe0 [get_nets [list {data_conv_model_i/m_axis_tdata[0]} {data_conv_model_i/m_axis_tdata[1]} {data_conv_model_i/m_axis_tdata[2]} {data_conv_model_i/m_axis_tdata[3]} {data_conv_model_i/m_axis_tdata[4]} {data_conv_model_i/m_axis_tdata[5]} {data_conv_model_i/m_axis_tdata[6]} {data_conv_model_i/m_axis_tdata[7]} {data_conv_model_i/m_axis_tdata[8]} {data_conv_model_i/m_axis_tdata[9]} {data_conv_model_i/m_axis_tdata[10]} {data_conv_model_i/m_axis_tdata[11]} {data_conv_model_i/m_axis_tdata[12]} {data_conv_model_i/m_axis_tdata[13]} {data_conv_model_i/m_axis_tdata[14]} {data_conv_model_i/m_axis_tdata[15]} {data_conv_model_i/m_axis_tdata[16]} {data_conv_model_i/m_axis_tdata[17]} {data_conv_model_i/m_axis_tdata[18]} {data_conv_model_i/m_axis_tdata[19]} {data_conv_model_i/m_axis_tdata[20]} {data_conv_model_i/m_axis_tdata[21]} {data_conv_model_i/m_axis_tdata[22]} {data_conv_model_i/m_axis_tdata[23]} {data_conv_model_i/m_axis_tdata[24]} {data_conv_model_i/m_axis_tdata[25]} {data_conv_model_i/m_axis_tdata[26]} {data_conv_model_i/m_axis_tdata[27]} {data_conv_model_i/m_axis_tdata[28]} {data_conv_model_i/m_axis_tdata[29]} {data_conv_model_i/m_axis_tdata[30]} {data_conv_model_i/m_axis_tdata[31]} ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe1]
+connect_debug_port u_ila_2/probe1 [get_nets [list axis_switch_i/m_0_axis_tready ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe2]
+connect_debug_port u_ila_2/probe2 [get_nets [list axis_switch_i/m_0_axis_tuser ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe3]
+connect_debug_port u_ila_2/probe3 [get_nets [list axis_switch_i/m_0_axis_tvalid ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe4]
+connect_debug_port u_ila_2/probe4 [get_nets [list axis_switch_i/m_1_axis_tlast ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe5]
+connect_debug_port u_ila_2/probe5 [get_nets [list axis_switch_i/m_1_axis_tready ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe6]
+connect_debug_port u_ila_2/probe6 [get_nets [list axis_switch_i/m_1_axis_tuser ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe7]
+connect_debug_port u_ila_2/probe7 [get_nets [list axis_switch_i/m_1_axis_tvalid ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe8]
+connect_debug_port u_ila_2/probe8 [get_nets [list data_conv_model_i/m_axis_tlast ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe9]
+connect_debug_port u_ila_2/probe9 [get_nets [list data_conv_model_i/m_axis_tready ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe10]
+connect_debug_port u_ila_2/probe10 [get_nets [list data_conv_model_i/m_axis_tuser ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe11]
+connect_debug_port u_ila_2/probe11 [get_nets [list data_conv_model_i/m_axis_tvalid ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 2388.805 ; gain = 0.000
+[Fri Dec 20 16:33:54 2019] Launched impl_1...
+Run output will be captured here: E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2388.805 ; gain = 0.000
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2063 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/bit_align_en' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2622]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/bitslip_en' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2629]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'lvds_I/clrl_refclk' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2636]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[0]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2714]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[1]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2721]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[2]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2728]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[3]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2735]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[4]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2742]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[5]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2749]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[6]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2756]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/pattern[7]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2763]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/reset' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2773]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'lvds_I/reset' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2774]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[0]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2803]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[1]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2810]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[2]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2817]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[3]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2824]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[4]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2831]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[5]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2838]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[6]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2845]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data[7]' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2852]
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'lvds_I/rx_data_clk' is not directly connected to top level port. Synthesis is ignored for E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf but preserved for implementation. [E:/WorkSpace/project/FPGA/prj_modelsim/ip_repo/lvds/lvds.edf:2862]
+INFO: [Chipscope 16-324] Core: u_ila_0 UUID: 23e7d65a-79bc-59f7-bc47-406c1714dfae 
+INFO: [Chipscope 16-324] Core: u_ila_1 UUID: 3b505a03-0738-513c-9847-1d25f5b1f848 
+INFO: [Chipscope 16-324] Core: u_ila_2 UUID: b13c981a-c2d5-54bf-b4fb-e0eecea5cfd7 
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2484.398 ; gain = 11.480
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2484.398 ; gain = 11.480
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 371 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 292 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 68 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  SRLC32E => SRL16E: 7 instances
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.742 ; gain = 146.938
+open_report: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 2656.246 ; gain = 111.883
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3490.973 ; gain = 655.512
+set_property PROGRAM.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location '1:0-0' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location '1:1-0' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_2' at location '1:2-0' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location '1:0-0' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location '1:1-0' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_2' at location '1:2-0' from probes file, since it cannot be found on the programmed device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 3 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_2"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/WorkSpace/project/FPGA/prj_sc4210_lvds/prj_sc4210_lvds/prj_sc4210_lvds.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 17:41:35 2019...

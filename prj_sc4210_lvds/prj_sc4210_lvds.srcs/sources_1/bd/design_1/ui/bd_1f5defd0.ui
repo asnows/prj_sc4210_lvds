@@ -1,0 +1,74 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 680 -defaultsOSRD
+preplace port CMOS_XCK -pg 1 -y 1010 -defaultsOSRD
+preplace port clk_out2_200m -pg 1 -y 1040 -defaultsOSRD
+preplace port VideoStream_S2MM_1 -pg 1 -y 530 -defaultsOSRD
+preplace port IIC_0 -pg 1 -y 720 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 700 -defaultsOSRD
+preplace port ImgCapture2_S2MM_0 -pg 1 -y 1130 -defaultsOSRD
+preplace port FCLK_CLK0 -pg 1 -y 760 -defaultsOSRD
+preplace port ImgCapture1_S2MM_0 -pg 1 -y 890 -defaultsOSRD
+preplace port ImgCapture0_S2MM_0 -pg 1 -y 490 -defaultsOSRD
+preplace port M00_AXI -pg 1 -y 190 -defaultsOSRD
+preplace portBus peripheral_aresetn -pg 1 -y 940 -defaultsOSRD
+preplace portBus s2mm_frame_ptr_out -pg 1 -y 210 -defaultsOSRD
+preplace inst axi_vdma_imgCapture0 -pg 1 -lvl 3 -y 410 -defaultsOSRD
+preplace inst axi_vdma_memCopy -pg 1 -lvl 3 -y 700 -defaultsOSRD
+preplace inst axi_vdma_imgCapture1 -pg 1 -lvl 3 -y 930 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 4 -y 1280 -defaultsOSRD
+preplace inst axi_vdma_imgCapture2 -pg 1 -lvl 3 -y 1170 -defaultsOSRD -resize 320 196
+preplace inst axi_smc -pg 1 -lvl 4 -y 950 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -y 90 -defaultsOSRD
+preplace inst axi_smc_1 -pg 1 -lvl 4 -y 1090 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -y 710 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 5 -y 1020 -defaultsOSRD
+preplace inst axi_vdma_videoStream -pg 1 -lvl 5 -y 430 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -y 380 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 250 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 740 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 5 1 NJ
+preplace netloc axi_vdma_1_M_AXI_S2MM 1 3 1 990
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 4 NJ 190 NJ 190 NJ 190 NJ
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 590
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 3 1 1000
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 -160J 0 NJ 0 NJ 0 NJ 0 1940
+preplace netloc axi_smc_M00_AXI 1 4 1 1450
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 1 570
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 2 2 620 570 990
+preplace netloc axi_vdma_0_M_AXI_S2MM1 1 3 1 1020
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 3 3 1060 1170 NJ 1170 1930
+preplace netloc S_AXIS_S2MM_0_1 1 0 3 NJ 890 NJ 890 NJ
+preplace netloc processing_system7_0_IIC_0 1 5 1 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1410
+preplace netloc S_AXIS_S2MM_0_2 1 0 3 NJ 1130 NJ 1130 NJ
+preplace netloc axi_vdma_imgCapture1_M_AXI_S2MM 1 3 1 990
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 610
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 5 -140 510 610 560 1050 550 1440 940 NJ
+preplace netloc S_AXIS_S2MM_1 1 0 3 NJ 490 NJ 490 580J
+preplace netloc processing_system7_0_axi_periph_M06_AXI 1 2 1 560
+preplace netloc axi_gpio_0_gpio_io_o 1 4 2 1460 -10 1930
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
+preplace netloc axi_vdma_imgCapture2_M_AXI_S2MM 1 3 1 1060
+preplace netloc clk_wiz_0_clk_out1 1 5 1 1940J
+preplace netloc S_AXIS_S2MM_1_1 1 0 5 NJ 530 NJ 530 NJ 530 NJ 530 1420J
+preplace netloc axi_smc_1_M00_AXI 1 4 1 1460
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 N
+preplace netloc clk_wiz_0_clk_out2 1 5 1 N
+preplace netloc axi_vdma_1_s2mm_frame_ptr_out 1 5 1 1950
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 5 -150 500 600 550 1030 540 1430 930 1950
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 4 -160J 540 NJ 540 1010 860 1410
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 3 3 1010 230 NJ 230 1930
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 3 560J 180 NJ 180 1410
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 3 NJ 210 NJ 210 1410
+preplace netloc axi_vdma_memCopy_s2mm_introut 1 3 2 1040 870 NJ
+levelinfo -pg 1 -330 -180 410 810 1240 1700 1980 -top -80 -bot 1410
+",
+}
+{
+   da_axi4_cnt: "33",
+   da_clkrst_cnt: "2",
+   da_ps7_cnt: "1",
+}
